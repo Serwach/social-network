@@ -3,6 +3,7 @@ from django.core.urlresolvers import reverse
 from accounts.forms import RegistrationForm,EditProfileForm
 from django.contrib.auth.forms import PasswordChangeForm
 from django.contrib.auth import update_session_auth_hash
+from django.contrib.auth.models import User
 
 def register(request):
     if request.method == 'POST':
